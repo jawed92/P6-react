@@ -6,14 +6,14 @@
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 30px;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 30px 20px 30px;
     align-items: center;
+    width: 50%;
 
 }
 
@@ -23,9 +23,10 @@ nav {
 
 .ulNav {
     display: flex;
-    justify-content: space-between;
-    width: 20%;
+    justify-content: flex-end;
     list-style-type: none;
+    width: 100%;
+    gap: 2rem;
 }
 
 header a {
@@ -126,4 +127,153 @@ footer {
 .menu-roll {
     display: none;
 
+}
+
+/******* Presentation *******/
+
+#presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.sectionPresentation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+    height: 100%;
+}
+
+.description {
+    font-size: 1.3rem;
+    color: #FF6060;
+}
+
+.localisation {
+    color: #FF6060;
+}
+
+.avantages {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.liAvantages {
+    padding: 2px 20px 2px 20px;
+    border-radius: 40px;
+    background-color: #FF6060;
+    color: #F6F6F6;
+}
+
+.menu-description {
+    width: 60%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #FF6060;
+    padding: 10px 20px 10px 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.menu-description h2 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.sectionEquipements {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.cercle {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.prop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.propPrenom {
+    color: #FF6060;
+}
+
+.propNom {
+    color: #FF6060;
+}
+
+.etoile {
+    display: flex;
+    align-items: flex-end;
+    color: #FF6060;
+}
+
+/***************Mobile************/
+
+@media screen and (min-width: 320px) and (max-width:768px) {
+
+    * {
+        font-size: 13px;
+    }
+
+    /************Header************/
+
+    header {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    .logoResponsive {
+        width: 100%;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    .ulNav a {
+
+        text-transform: uppercase;
+    }
+
+    #presentation {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 2rem;
+    }
+
+    .sectionPresentation {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .sectionEquipements {
+        width: 100%;
+        align-items: baseline;
+    }
+
+    .prop {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-description {
+        width: 90%;
+    }
 }

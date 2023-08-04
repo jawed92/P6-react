@@ -11,56 +11,65 @@
 
 <body>
     <header>
+
+        <a href="index.html" class="logo">
+            <img src="./assets/LOGO.png" alt="Logo Kasa" class="logoResponsive" />
+        </a>
         <nav>
-            <div class="logo">
-                <img src="./assets/LOGO.png" alt="Logo Kasa" />
-            </div>
 
             <ul class="ulNav">
                 <li><a href="index.html">Acceuil</a></li>
                 <li><a href="about.html"> A propos</a></li>
             </ul>
         </nav>
-        <div class="banner">
-            <img src="./assets/baniere-presentation.png" alt="paysage" />
-        </div>
     </header>
+    <div class="banner">
+        <img src="./assets/baniere-presentation.png" alt="paysage" />
+    </div>
 
-    <main>
-        <section>
-            <h3 class="description">Cozy loft on the Canal Saint-Martin</h3>
+
+    <main id="presentation">
+        <section class="sectionPresentation">
+            <h1 class="description">Cozy loft on the Canal Saint-Martin</h1>
             <p class="localisation">Paris, île-de-France</p>
             <ul class="avantages">
-                <li>Cozy</li>
-                <li>Canal</li>
-                <li>Paris 10</li>
+                <li class="liAvantages">Cozy</li>
+                <li class="liAvantages">Canal</li>
+                <li class="liAvantages">Paris 10</li>
             </ul>
             <div class="menu-description">
-                <h3>Description</h3>
+                <h2>Description</h2>
                 <p class="menu-roll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit iure minus
                     rerum odio? Voluptatibus recusandae nobis cum harum dignissimos dolor mollitia? Dolores omnis,
                     aperiam iusto ab reiciendis voluptas perferendis quae?</p>
             </div>
         </section>
-        <section>
-            <p>Alexandre <br> Dumas</p>
-            <div class="cercle"></div>
-            <div class="imageEtoile">
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="false"></i>
-                <i class="fas fa-star gris" aria-hidden="false"></i>
+        <section class="sectionEquipements">
+            <div class="prop">
+                <p class="propPrenom">Alexandre <br class="propNom"> Dumas</p>
+                <span class="cercle"></span>
+
+                <div class="etoile">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star gris" aria-hidden="false"></i>
+                </div>
             </div>
-            <h3>Equipements</h3>
-            <p class="menu-roll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit iure minus
-                rerum odio? Voluptatibus recusandae nobis cum harum dignissimos dolor mollitia? Dolores omnis,
-                aperiam iusto ab reiciendis voluptas perferendis quae?</p>
+            <div class="menu-description">
+                <h2>Equipements</h2>
+                <p class="menu-roll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit iure minus
+                    rerum odio? Voluptatibus recusandae nobis cum harum dignissimos dolor mollitia? Dolores omnis,
+                    aperiam iusto ab reiciendis voluptas perferendis quae?</p>
+            </div>
         </section>
     </main>
     <footer>
         <div class="logoFooter">
-            <img src="./assets/LOGO-footer.png" alt="logo" />
+            <a href="index.html">
+                <img src="./assets/LOGO-footer.png" alt="Logo Kasa" />
+            </a>
         </div>
         <div class="copyright">
             <p>2020 Kasa, All rights reserved</p>
